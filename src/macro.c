@@ -4,6 +4,7 @@
 
 #include<stdio.h>
 #include <string.h>
+
 /**
  * 获取结构体变量成员的偏移量
  * @param type 类型（struct）
@@ -15,7 +16,6 @@
  * (size_t)&(((type *)0)->member)    将地址转化为size_t 即为偏移量
  */
 #define __offsetof__(type, member) ( ( size_t ) & ( ( type * ) 0 )->member )
-
 
 /**
  * 获取指向整个结构体的指针
