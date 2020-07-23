@@ -44,11 +44,12 @@ typedef struct Student {
 } Stu;
 
 int main() {
-    int gender_offset = __offsetof__(struct Student, gender);
-    int id_offset     = __offsetof__(struct Student, id);
-    int age_offset    = __offsetof__(struct Student, age);
-    int name_offset   = __offsetof__(struct Student, name);
-    int score_offset  = __offsetof__(struct Student, score);
+    int gender_offset,id_offset,age_offset,name_offset,score_offset;
+    gender_offset = __offsetof__(struct Student, gender);
+    id_offset     = __offsetof__(struct Student, id);
+    age_offset    = __offsetof__(struct Student, age);
+    name_offset   = __offsetof__(struct Student, name);
+    score_offset  = __offsetof__(struct Student, score);
     printf("%d\t%d\t%d\t%d\t%d\n", gender_offset, id_offset, age_offset, name_offset, score_offset);
 
     Stu stu;
