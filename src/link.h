@@ -82,11 +82,11 @@ static inline int list_empty(const struct list_head *head)
         __container_of__(ptr,type,member)
 
 //go through list
-#define list_for_each(position,head)\
-        for(position=(head)->next;position!=(head);position=position->next)
+#define list_for_each(pos,head)\
+        for(pos=(head)->next;pos!=(head);pos=pos->next)
 
-#define list_for_each_safe(position,n,head)\
-        for(position=(head)->next,n=(position)->next;position!=(head);\
-        position=n,n=position->next)
+#define list_for_each_safe(pos,n,head)\
+        for(pos=(head)->next,n=(pos)->next;pos!=(head);\
+        pos=n,n=pos->next)
 
 #endif //_LINK_H_
