@@ -12,4 +12,4 @@ gen
 .idea/misc.xml
 .idea/modules.xml
 CMakeLists.txt
-cmake-build-debug/`
+cmake-build-debug/
